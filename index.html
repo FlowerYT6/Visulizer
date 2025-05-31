@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avee-Style Circular Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="controls">
+    <input type="file" id="audioFile" accept="audio/*">
+    <input type="color" id="colorPicker" value="#00ffea">
+    <input type="file" id="bgPicker" accept="image/*">
+    <label><input type="checkbox" id="rainbowToggle"> Rainbow Mode 🌈</label>
+    <button onclick="startRecording()">Start Recording 📹</button>
+    <button onclick="stopRecording()">Stop & Download ⬇</button>
+  </div>
+  <canvas id="visualizer"></canvas>
+  <audio id="audio" controls></audio>
+  <script src="visualizer.js"></script>
+</body>
+</html>
